@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;500&family=Open+Sans&family=Poppins:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.conteiner {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.conteiner header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner header .side-menue {
+    display: none;
+}
+
+.conteiner header .menue {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner header .menue ul {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.conteiner header .menue ul li {
+    list-style: none;
+    padding: 25px;
+    font-size: 18px;
+}
+
+.conteiner header .menue ul .first-li {
+    position: relative;
+}
+
+.conteiner header .menue ul .first-li .drowp-menue1 {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 20%);
+    border-radius: 0.5rem;
+    left: 0;
+    width: 150px;
+}
+
+.conteiner header .menue ul .first-li .drowp-menue1 li {
+    display: flex;
+    gap: 0.9rem;
+    padding: 10px;
+}
+
+.conteiner header .menue ul .first-li .drowp-menue1 li a {
+    font-size: 16px;
+}
+
+.conteiner header .menue ul .second-li {
+    position: relative;
+}
+
+.conteiner header .menue ul .second-li .drowp-menue2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 20%);
+    border-radius: 0.5rem;
+    width: 120px;
+}
+
+.conteiner header .menue ul .second-li .drowp-menue2 li {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.conteiner header .menue ul li a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+
+.conteiner header .menue ul .first-li a .hide-arrow-up {
+    display: none;
+}
+
+.conteiner header .menue ul .second-li a .hiden-second-arrow {
+    display: none;
+}
+
+.conteiner header .menue .user {
+    display: flex;
+    gap: 3rem;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.conteiner header .menue .user button {
+    padding: 0.8rem 1.8rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid hsl(0, 0%, 8%);
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+
+.conteiner header .menue .user a {
+    color: hsl(0, 0%, 8%);
+    text-decoration: none;
+}
+
+.conteiner header .menue ul .first-li .hiden,
+.conteiner header .menue ul .second-li .hiden {
+    display: none;
+}
+
+.conteiner .home {
+    max-width: 90vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.conteiner .home .left {
+    width: 40%;
+}
+
+.conteiner .home .left .wrapper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.conteiner .home .left .wrapper h1 {
+    font-size: 3rem;
+}
+
+.conteiner .home .left .wrapper p {
+    font-size: 16px;
+    color: hsl(0, 0%, 41%);
+}
+
+.conteiner .home .left .wrapper button {
+    width: 40%;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .9s;
+}
+
+.conteiner .home .left .wrapper button:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.conteiner .home .left .wrapper .icons {
+    padding-top: 15px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.conteiner .home .right {
+    width: 40%;
+    height: 90%;
+}
+
+@media all and (max-width:950px) {
+    .conteiner header .menue {
+        display: none;
+        position: relative;
+    }
+    .conteiner header .side-menue {
+        display: block;
+        padding-right: 20px;
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+        z-index: 1;
+    }
+    .conteiner header .side-menue .open-menue {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70vw;
+        height: 100vh;
+        background-color: #fff;
+        padding-top: 5rem;
+        padding-left: 3rem;
+        z-index: -1;
+    }
+    .conteiner header .side-menue .open-menue ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .conteiner header .side-menue .open-menue ul .first-li-menue .hide {
+        display: none;
+    }
+    .conteiner header .side-menue .open-menue ul .first-li-menue .first-drop-menue1 {
+        margin-top: 1.5rem;
+        padding-left: 2rem;
+    }
+    .conteiner header .side-menue .open-menue ul {
+        gap: 1rem;
+    }
+    .conteiner header .side-menue .open-menue ul li a {
+        color: hsl(0, 0%, 41%);
+        text-decoration: none;
+    }
+    .conteiner header .side-menue .open-menue ul .first-li-menue .first-drop-menue1 li a {
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+    }
+    .conteiner header .side-menue .open-menue ul .first-li-menue span {
+        padding-right: 0.8rem;
+    }
+    .conteiner header .side-menue .open-menue ul .second-li-menue span {
+        padding-right: 0.6rem;
+    }
+    .conteiner header .side-menue .open-menue ul .second-li-menue .second-drop-menue2 {
+        margin-top: 1.5rem;
+        padding-left: 2rem;
+    }
+    .conteiner header .side-menue .open-menue ul .second-li-menue .second-drop-menue2 li a {
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+    }
+    .conteiner header .side-menue .open-menue ul .first-li-menue .first-drop-menue1 .hide {
+        display: none;
+    }
+    .conteiner header .side-menue .open-menue ul .first-li-menue .drowp-menue1 .hide {
+        display: none;
+    }
+    .conteiner header .side-menue .open-menue ul .second-li-menue .hide {
+        display: none;
+    }
+    .conteiner header .side-menue .hide {
+        display: none;
+    }
+    .conteiner .home {
+        flex-direction: column-reverse;
+        height: unset;
+    }
+    .conteiner .home .left {
+        width: 100%;
+    }
+    .conteiner .home .right {
+        width: 100%;
+    }
+    .conteiner .home .left .wrapper {
+        width: 100%;
+        align-items: center;
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 1.5rem;
+    }
+    .conteiner .home .left .wrapper h1 br {
+        display: none;
+    }
+    .conteiner .home .left .wrapper p {
+        text-align: center;
+    }
+}
+
+.conteiner .home .left .wrapper .icons img {
+    width: 100px;
+}
+
+@media (width:360px) {
+    .conteiner .home .left .wrapper h1 {
+        text-align: center;
+    }
+}
+
+@media (width:1024px) {
+    .conteiner .home .left .wrapper {
+        width: 90%;
+    }
+    .conteiner .home .left .wrapper h1 {
+        font-size: 2rem;
+    }
+    .conteiner .home .left .wrapper h1 br {
+        display: none;
+    }
+    .conteiner .home .left .wrapper button {
+        width: 160px;
+        font-size: 18px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+}
+
+@media (width:1280px) {
+    .conteiner .home .left .wrapper button {
+        width: 160px;
+        font-size: 18px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+}
+
+@media all and (max-width: 414px) {
+    .conteiner .home .left .wrapper .icons {
+        gap: 1rem;
+    }
+    .conteiner .home .left .wrapper .icons img {
+        width: 70px;
+    }
+    .conteiner .home .left .wrapper button {
+        width: 150px;
+    }
+}
+
+@media (width:540px) {
+    .conteiner .home .left .wrapper button {
+        width: 150px;
+    }
+}
+
+@media (width:280px) {
+    .conteiner .home .left .wrapper h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .conteiner .home .left .wrapper button {
+        width: 150px;
+    }
+    .conteiner .home .left .wrapper .icons img {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 375px) {
+    .conteiner .home .left .wrapper h1 {
+        font-size: 2rem;
+    }
+    .conteiner .home .right {
+        height: 300px;
+    }
+    .conteiner .home .left .wrapper .icons {
+        gap: 1.5rem;
+    }
+}
